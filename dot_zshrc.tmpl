@@ -1,0 +1,66 @@
+# Zsh Plugins
+plugins=(git npm docker docker-compose zsh-autosuggestions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Editor
+export EDITOR="nano"
+
+# Style
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080"
+
+# Alias
+alias mp=multipass
+alias cat=bat
+#alias diff="difftastic"
+
+
+
+
+
+{{ if eq .chezmoi.os "darwin" }}
+# darwin
+
+export ZSH="/Users/iwa/.oh-my-zsh"
+
+## Starship
+export STARSHIP_CONFIG="/Users/iwa/.dotfiles/starship.toml"
+eval "$(starship init zsh)"
+
+## Compilation flags for mac arm
+export ARCHFLAGS="-arch arm64"
+
+## alias macOS
+alias flush-dns="sudo killall -HUP mDNSResponder; echo \"dns cleared successfully\" "
+alias python=/usr/bin/python3
+alias pip=/usr/bin/pip3
+alias webdl=/Users/iwa/.scripts/webdl.sh
+
+## jenv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+## bun completions
+[ -s "/Users/iwa/.bun/_bun" ] && source "/Users/iwa/.bun/_bun"
+
+## bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+## google cli
+alias gam-kubic="/Users/iwa/bin/gam-kubic/gam"
+alias gam-carre="/Users/iwa/bin/gam-carre/gam"
+alias gam="/Users/iwa/bin/gam/gam"
+
+## load Angular CLI autocompletion
+source <(ng completion script)
+
+{{ else if eq .chezmoi.os "linux" }}
+# linux
+
+
+{{ end }}
