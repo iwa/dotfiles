@@ -1,34 +1,13 @@
-# Zsh Plugins
-plugins=(git npm docker docker-compose zsh-autosuggestions zsh-syntax-highlighting)
-source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
-# Editor
-export EDITOR="nano"
-
-# Style
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080"
-
-# Alias
-alias mp=multipass
-alias cat=bat
-#alias diff="difftastic"
-
-
-
-
-
+# ---------------------
+# Per-OS Config
+# ---------------------
 {{ if eq .chezmoi.os "darwin" }}
 # darwin
 
 export ZSH="/Users/iwa/.oh-my-zsh"
 
 ## Starship
-export STARSHIP_CONFIG="/Users/iwa/.dotfiles/starship.toml"
+export STARSHIP_CONFIG="/Users/iwa/.starship.toml"
 eval "$(starship init zsh)"
 
 ## Compilation flags for mac arm
@@ -62,5 +41,41 @@ source <(ng completion script)
 {{ else if eq .chezmoi.os "linux" }}
 # linux
 
+export ZSH="$HOME/.oh-my-zsh"
+
+## Compilation flags
+export ARCHFLAGS="-arch x86_64"
+
+## Aliases
+alias ls='exa'
+alias ll='exa -l'
+alias la='exa -la'
+
+alias df='duf'
+# alias cat='bat'
+alias t='tmux'
+
 
 {{ end }}
+
+# ---------------
+
+# Zsh Plugins
+plugins=(git npm docker docker-compose zsh-autosuggestions zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Editor
+export EDITOR="nano"
+
+# Style
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#808080"
+
+# Global alias
+alias mp=multipass
+alias cat=bat
+#alias diff="difftastic"
