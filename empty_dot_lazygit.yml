@@ -18,5 +18,18 @@ keybinding:
     nextTab: 'ù'
     prevTab: '%'
 
+    prevItem-alt: j # up is j
+    nextItem-alt: k # down is k
+    prevBlock-alt: l # left is l
+    nextBlock-alt: m # right is m
+    scrollLeft: L
+    scrollRight: M
+
+    createRebaseOptionsMenu: h
+
     scrollUpMain-alt2: <disabled> # remove useless keybinds
     scrollDownMain-alt2: <disabled>
+  files:
+    openMergeTool: H
+  branches:
+    mergeIntoCurrentBranch: H
