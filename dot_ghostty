@@ -44,3 +44,7 @@ selection-foreground  = #bcc1cd
 cursor-color = #d0d0d0
 cursor-style = bar
 cursor-style-blink = false
+
+# pseudo fix for strange font rendering
+adjust-cell-width = "-6%"
+adjust-cell-height = "-12%"
