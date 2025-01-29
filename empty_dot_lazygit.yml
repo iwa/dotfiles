@@ -1,0 +1,22 @@
+gui:
+  language: en
+  timeFormat: 02 Jan 2006
+  shortTimeFormat: 15:04
+  nerdFontsVersion: '3'
+  commandLogSize: 4
+
+  # bold active line instead of blue bg
+  theme:
+    selectedLineBgColor:
+      - default
+
+  authorColors:
+    'iwa': '#d9b2f7'
+
+keybinding:
+  universal:
+    nextTab: 'ù'
+    prevTab: '%'
+
+    scrollUpMain-alt2: <disabled> # remove useless keybinds
+    scrollDownMain-alt2: <disabled>
