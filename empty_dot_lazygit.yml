@@ -8,7 +8,8 @@ gui:
   # bold active line instead of blue bg
   theme:
     selectedLineBgColor:
-      - default
+      - bold
+      - '#212329'
 
   authorColors:
     'iwa': '#d9b2f7'
@@ -18,12 +19,14 @@ keybinding:
     nextTab: 'ù'
     prevTab: '%'
 
-    prevItem-alt: j # up is j
-    nextItem-alt: k # down is k
+    prevItem-alt: k # up is k (vanilla)
+    nextItem-alt: j # down is j (vanilla)
     prevBlock-alt: l # left is l
     nextBlock-alt: m # right is m
     scrollLeft: L
     scrollRight: M
+    scrollUpMain-alt1: K # (vanilla)
+    scrollDownMain-alt1: J # (vanilla)
 
     createRebaseOptionsMenu: h
 
