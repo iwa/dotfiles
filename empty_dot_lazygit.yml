@@ -30,9 +30,27 @@ keybinding:
 
     createRebaseOptionsMenu: h
 
+    increaseContextInDiffView: )
+    decreaseContextInDiffView: (
+    increaseRenameSimilarityThreshold: '}'
+    decreaseRenameSimilarityThreshold: '{'
+
     scrollUpMain-alt2: <disabled> # remove useless keybinds
     scrollDownMain-alt2: <disabled>
   files:
     openMergeTool: H
   branches:
     mergeIntoCurrentBranch: H
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+
+customCommands:
+  - key: '<c-f>'  # Ctrl-f (think "full screen") to show selected commit
+    context: 'commits'
+    command: "git show {{.SelectedLocalCommit.Sha}} | delta --dark"
+    subprocess: true
+    description: "Show selected commit"
+    stream: true
