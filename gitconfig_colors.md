@@ -1,0 +1,41 @@
+```gitconfig
+[color]
+	ui = auto
+[color "diff"]
+    meta = brightblack
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[delta]
+    dark = true
+    side-by-side = true
+    syntax-theme = OneHalfDark
+
+    hyperlinks = true
+    hyperlinks-file-link-format = "vscode://file/{path}:{line}"
+
+    line-numbers = true
+    line-numbers-left-format = "{nm:>4}│"
+    line-numbers-left-style = red
+    line-numbers-minus-style = red bold
+    line-numbers-right-format = "{np:>4}│"
+    line-numbers-plus-style = green bold
+    line-numbers-right-style = green
+    line-numbers-zero-style = "#464B57" italic
+
+    file-added-label = [+]
+    file-copied-label = [C]
+    file-modified-label = [*]
+    file-removed-label = [⛌]
+    file-renamed-label = [→]
+
+    minus-emph-style = syntax "#422425"
+    minus-style = syntax "#291617"
+    plus-emph-style = syntax bold "#37422C"
+    plus-style = syntax "#22291B"
+
+    # hunk-header-style = red
+    hunk-header-style = syntax
+    hunk-header-decoration-style = brightblack box
+```
