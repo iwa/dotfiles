@@ -1,12 +1,28 @@
 ```gitconfig
 [color]
-	ui = auto
+    ui = true
 [color "diff"]
     meta = brightblack
     frag = magenta bold
     old = red bold
     new = green bold
     whitespace = red reverse
+[color "branch"]
+    current = green reverse
+    local = green
+    remote = yellow
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+[color "decorate"]
+    branch = green
+    remoteBranch = red
+    tag = yellow
+    stash = magenta
+    head = bold cyan
+[format]
+    pretty = format:%C(bold magenta)%h%C(auto)%d%n%C(brightblack)%ar - %an%C(reset)%n%s%n%b%n
 [delta]
     dark = true
     side-by-side = true
