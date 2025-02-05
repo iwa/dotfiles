@@ -43,6 +43,7 @@ keybinding:
     mergeIntoCurrentBranch: H
 
 git:
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=format:'%C(bold magenta)%h%C(auto)%d%n%C(brightblack)%ar - %an%C(reset)%n%s%n%b%n' {{branchName}} --"
   paging:
     colorArg: always
     pager: delta --dark --paging=never
