@@ -24,6 +24,8 @@ alias gam-kubic="/Users/iwa/bin/gam-kubic/gam"
 alias gam-carre="/Users/iwa/bin/gam-carre/gam"
 alias gam="/Users/iwa/bin/gam/gam"
 
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
 # abbrevations
 abbr --add lg lazygit
 abbr --add x exit
