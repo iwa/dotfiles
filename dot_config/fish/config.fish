@@ -1,5 +1,6 @@
 fish_add_path /usr/local/sbin
 fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
 
 set fish_greeting
 
@@ -10,7 +11,7 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export ARCHFLAGS="-arch arm64"
-export TERM=screen-256color
+export TERM=xterm-256color
 export EDITOR="nano"
 
 # functions
