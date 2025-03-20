@@ -54,4 +54,7 @@
     # hunk-header-style = red
     hunk-header-style = syntax
     hunk-header-decoration-style = brightblack box
+
+[alias]
+	plr = pull --rebase
 ```
