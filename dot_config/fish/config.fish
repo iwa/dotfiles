@@ -14,6 +14,8 @@ export ARCHFLAGS="-arch arm64"
 export TERM=xterm-256color
 export EDITOR="nano"
 
+export DOTNET_CLI_TELEMETRY_OPTOUT="true"
+
 # functions
 function flush-dns
     sudo killall -HUP mDNSResponder
