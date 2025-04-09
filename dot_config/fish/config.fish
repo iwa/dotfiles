@@ -31,6 +31,7 @@ alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # abbrevations
 abbr --add lg lazygit
+abbr --add l ls -lh
 abbr --add x exit
 
 # Starship
