@@ -30,6 +30,7 @@ alias gam="/Users/iwa/bin/gam/gam"
 alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 
 # abbrevations
+abbr --add gcl git clone
 abbr --add lg lazygit
 abbr --add l ls -lh
 abbr --add x exit
