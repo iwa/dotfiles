@@ -1,0 +1,5 @@
+noremap m l
+noremap l h
+noremap h m
+
+set clipboard+=unnamed
