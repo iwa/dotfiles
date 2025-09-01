@@ -9,7 +9,16 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle"
+      "shift shift": "file_finder::Toggle",
+      "ctrl-alt-y": null,
+      "ctrl-alt-)": null,
+      "ctrl-alt-+": null,
+      "ctrl-alt-_": null,
+      "ctrl-alt-0": null,
+      "ctrl-alt-=": null,
+      "ctrl-alt--": null,
+      "secondary-alt-b": "workspace::ToggleLeftDock",
+      "secondary-b": "workspace::ToggleRightDock"
     }
   },
   {
@@ -23,7 +32,8 @@
     "bindings": {
       "h": "vim::PushMark",
       "l": "vim::Left",
-      "m": "vim::Right"
+      "m": "vim::Right",
+      "ctrl-b": null
     }
   },
   {
@@ -42,6 +52,29 @@
           "advance_downwards": false
         }
       ]
+    }
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == helix_normal) && !menu)",
+    "bindings": {
+      "p": [
+        "vim::Paste",
+        {
+          "preserve_clipboard": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "p": [
+        "vim::Paste",
+        {
+          "preserve_clipboard": true
+        }
+      ],
+      "shift-p": "vim::Paste"
     }
   }
 ]
