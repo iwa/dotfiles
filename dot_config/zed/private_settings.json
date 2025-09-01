@@ -77,6 +77,24 @@
           "--show-stats=false"
         ]
       }
+    },
+    "stylelint-lsp": {
+      "binary": {
+        "path": "C:\\Program Files\\nodejs\\node.exe",
+        "arguments": [
+          "C:\\Users\\iwaqw\\AppData\\Local\\Zed\\extensions\\work\\stylelint\\stylelint-vsix\\extension\\dist\\start-server.js",
+          "--stdio"
+        ]
+        // change for windows vs mac
+      },
+      "settings": {
+        "stylelint": {
+          "validate": ["css", "postcss", "scss"]
+        }
+      }
     }
+  },
+  "inlay_hints": {
+    "enabled": true
   }
 }
