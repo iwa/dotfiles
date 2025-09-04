@@ -1,5 +1,17 @@
+" Use system clipboard
+set clipboard+=unnamed
+
+" Remap movement keys
 noremap m l
 noremap l h
 noremap h m
 
-set clipboard+=unnamed
+" Disable default Ctrl+d, Ctrl+u, Ctrl+f, Ctrl+b
+noremap <C-d> <Nop>
+noremap <C-u> <Nop>
+noremap <C-f> <Nop>
+noremap <C-b> <Nop>
+
+" Remap Ctrl+j to half-page down, Ctrl+k to half-page up
+nnoremap <C-j> <C-d>
+nnoremap <C-k> <C-u>
