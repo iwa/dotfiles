@@ -33,7 +33,12 @@
       "h": "vim::PushMark",
       "l": "vim::Left",
       "m": "vim::Right",
-      "ctrl-b": null
+      "ctrl-b": null,
+      "ctrl-f": null,
+      "ctrl-d": null,
+      "ctrl-u": null,
+      "ctrl-j": "vim::ScrollDown",
+      "ctrl-k": "vim::ScrollUp"
     }
   },
   {
