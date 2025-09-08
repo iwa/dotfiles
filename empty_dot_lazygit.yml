@@ -37,6 +37,10 @@ keybinding:
 
     scrollUpMain-alt2: <disabled> # remove useless keybinds
     scrollDownMain-alt2: <disabled>
+
+    # revert ctrl-z for undo
+    suspendApp: <disabled>
+    redo: <c-z>
   files:
     openMergeTool: H
   branches:
