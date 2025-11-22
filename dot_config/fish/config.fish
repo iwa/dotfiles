@@ -34,6 +34,9 @@ abbr --add gcl git clone
 abbr --add lg lazygit
 abbr --add l ls -lh
 abbr --add x exit
+abbr --add dcd docker compose down
+abbr --add dcu docker compose up -d
+abbr --add dcp docker compose pull
 
 # Starship
 export STARSHIP_CONFIG="/Users/iwa/.starship.toml"
