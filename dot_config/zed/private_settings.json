@@ -86,8 +86,8 @@
     "copy_on_select": false,
     "line_height": "standard",
     "toolbar": {
-      "breadcrumbs": false
-    }
+      "breadcrumbs": false,
+    },
   },
   // File explorer
   "project_panel": {
@@ -95,12 +95,12 @@
     "hide_root": true,
     "auto_fold_dirs": false,
     "indent_guides": {
-      "show": "always"
-    }
+      "show": "always",
+    },
   },
   "icon_theme": "Catppuccin Mocha",
   "telemetry": {
-    "metrics": false
+    "metrics": false,
   },
   "vim_mode": true,
   "ui_font_size": 14,
@@ -110,20 +110,23 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "iwa theme dark"
+    "dark": "iwa theme dark",
   },
   // Tabs
   "tabs": {
-    "file_icons": true
+    "file_icons": true,
   },
   "bottom_dock_layout": "right_aligned",
   "gutter": {
-    "folds": false
+    "folds": false,
   },
   "languages": {
     "Go": {
-      "language_servers": ["gopls", "golangci-lint"]
-    }
+      "language_servers": ["gopls", "golangci-lint"],
+    },
+    "Make": {
+      "hard_tabs": true,
+    },
   },
   "lsp": {
     "golangci-lint": {
@@ -133,42 +136,45 @@
           "run",
           "--output.json.path=stdout",
           "--issues-exit-code=1",
-          "--show-stats=false"
-        ]
-      }
+          "--show-stats=false",
+        ],
+      },
     },
     "stylelint-lsp": {
       "binary": {
         "path": "C:\\Program Files\\nodejs\\node.exe",
         "arguments": [
           "C:\\Users\\iwaqw\\AppData\\Local\\Zed\\extensions\\work\\stylelint\\stylelint-vsix\\extension\\dist\\start-server.js",
-          "--stdio"
-        ]
+          "--stdio",
+        ],
         // change for windows vs mac
       },
       "settings": {
         "stylelint": {
-          "validate": ["css", "postcss", "scss"]
-        }
-      }
-    }
+          "validate": ["css", "postcss", "scss"],
+        },
+      },
+    },
   },
   // Inlay hints
   "inlay_hints": {
+    "show_other_hints": true,
+    "show_parameter_hints": true,
+    "show_type_hints": false,
     "enabled": true,
-    "show_background": false
+    "show_background": false,
   },
   // Status bar
   "status_bar": {
     "active_language_button": true,
-    "cursor_position_button": true
+    "cursor_position_button": true,
   },
   // Titlebar
   "title_bar": {
-    "show_branch_icon": true
+    "show_branch_icon": true,
   },
   "minimap": {
-    "show": "never"
+    "show": "never",
   },
-  "show_whitespaces": "trailing"
+  "show_whitespaces": "trailing",
 }
