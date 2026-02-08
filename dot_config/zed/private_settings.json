@@ -7,6 +7,19 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "git_panel": {
+    "tree_view": true,
+  },
+  "agent_servers": {
+    "claude": {
+      "default_mode": "default",
+    },
+    "mistral-vibe": {
+      "type": "extension",
+      "default_mode": "approval_required",
+    },
+  },
+  "confirm_quit": true,
   "ssh_connections": [
     {
       "host": "srv-prod-tokyo",
