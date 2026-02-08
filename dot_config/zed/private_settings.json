@@ -23,12 +23,18 @@
   "ssh_connections": [
     {
       "host": "srv-prod-tokyo",
+      "args": [],
       "projects": [
         {
-          "paths": ["/opt/docker"]
-        }
-      ]
-    }
+          "paths": ["/opt/docker"],
+        },
+      ],
+    },
+    {
+      "host": "srv-prod-osaka",
+      "args": [],
+      "projects": [],
+    },
   ],
   // AI settings
   "agent": {
