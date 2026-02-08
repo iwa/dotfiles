@@ -68,16 +68,15 @@
     "dock": "left",
   },
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "subtle",
     "copilot": {
+      "enable_next_edit_suggestions": false,
       "proxy": null,
       "proxy_no_verify": null,
-      "enterprise_uri": null
+      "enterprise_uri": null,
     },
-    "enabled_in_text_threads": false
-  },
-  "features": {
-    "edit_prediction_provider": "copilot"
+    "enabled_in_text_threads": false,
   },
   // Terminal
   "terminal": {
