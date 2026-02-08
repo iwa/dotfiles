@@ -38,12 +38,34 @@
   ],
   // AI settings
   "agent": {
+    "favorite_models": [
+      {
+        "provider": "copilot_chat",
+        "model": "claude-opus-4.5"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "claude-sonnet-4.5"
+      },
+      {
+        "provider": "mistral",
+        "model": "devstral-medium-latest"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5.2-codex"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "claude-opus-4.6"
+      }
+    ],
     "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "model": "claude-opus-4.6",
     },
-    "dock": "left"
+    "dock": "left",
   },
   "edit_predictions": {
     "mode": "subtle",
