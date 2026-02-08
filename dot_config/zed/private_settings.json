@@ -106,7 +106,8 @@
   "ui_font_size": 14,
   "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "buffer_font_size": 12,
-  "wrap_guides": [80],
+  "show_wrap_guides": false,
+  "wrap_guides": [],
   "theme": {
     "mode": "system",
     "light": "One Light",
