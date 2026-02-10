@@ -27,7 +27,8 @@
 
 [log]
     abbrevCommit = true
-    graphColors = blue,cyan
+    graphColors = white,blue,cyan
+    date = format:%Y-%m-%d %H:%M:%S
 
 [alias]
 	plr = pull --rebase
