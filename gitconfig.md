@@ -60,7 +60,7 @@
     head = bold cyan
 
 [format]
-    pretty = format:%C(bold magenta)%h%C(auto)   %D%n%C(brightblack)%an - %ar%C(reset)%n%s%n%b%n
+    pretty = format:%C(bold magenta)%h%C(auto)   %D%n%C(brightblack)%an - %ar - %ad%C(reset)%n%s%n%b%n
 ```
 
 ### old config
