@@ -41,3 +41,6 @@ abbr --add dcp docker compose pull
 # Starship
 export STARSHIP_CONFIG="/Users/iwa/.starship.toml"
 starship init fish | source
+
+# zoxide
+zoxide init fish | source
